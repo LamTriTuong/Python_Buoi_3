@@ -1,4 +1,4 @@
-n = int(input("Nhập tháng vào: "))
+n = int(input("Nhập n:"))
 def HIEN_THI(n):
     if(1<=3 and n <=3):
         print("Mùa Xuân")
@@ -8,5 +8,9 @@ def HIEN_THI(n):
         print("Mùa Thu")
     elif(9<=12 and n <= 12):
         print("Mùa Đông")
+print("Nhập tháng: ",end="")
+thang=int(input())
+while thang<1 or thang>12:
+    print("Tháng không hợp lệ vui lòng nhập lại!!!")
+    thang=int(input("Nhap thang: "))
 HIEN_THI(n)
-    
